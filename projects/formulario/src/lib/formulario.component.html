@@ -1,0 +1,9 @@
+<form [formGroup]="form">
+    <mat-form-field appearance="outline">
+        <mat-label>Test</mat-label>
+        <input matInput type="password" formControlName="claveInternet"
+            maxlength="8">
+    </mat-form-field>
+    <lib-datepicker [datepickerInput]="datepickerConfig" [form]="form">
+    </lib-datepicker>
+</form>
